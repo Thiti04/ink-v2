@@ -1,7 +1,9 @@
-import { Inter } from "next/font/google";
+import { Noto_Sans_Thai } from "next/font/google";
 import "./globals.css";
+import Nav from "@/components/Nav";
 
-const inter = Inter({ subsets: ["latin"] });
+// Import Noto Sans Thai correctly
+const notoSansThai = Noto_Sans_Thai({ subsets: ["latin"], weight: ["500"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +13,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={notoSansThai.className}>
+        <header className="fixed top-0 left-0 right-0 z-50">
+          <div>
+            <Nav />
+          </div>
+        </header>
+        <main className="relative z-0 pt-[56px]"> {/* เพิ่ม padding-top ให้เท่ากับความสูงของ Nav */}
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
