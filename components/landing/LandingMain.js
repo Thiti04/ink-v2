@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function LandingMain(){
     return(
         <section className="relative -top- bg-cover bg-no-repeat bg-[url('https://cdn.discordapp.com/attachments/1261341789558669376/1273168325748199505/modern-printing-press-creates-colorful-documents-indoors-generated-by-ai_188544-22624.jpg?ex=66bda1e7&is=66bc5067&hm=6d47db589b607c55143c06c9872141fd29e468be0bc9c295c2d8ea4ea51f0784&')] bg-gray-950/30 bg-blend-multiply ">
@@ -17,8 +19,8 @@ export default function LandingMain(){
                 ในการพิมพ์งานได้ดียิ่งขึ้น ทำให้สามารถลดต้นทุนที่ไม่จำเป็นได้
               </p>
               <div className="flex flex-col space-y-4 sm:flex-row sm:space-y-0">
-                <a
-                  href="#"
+                <Link
+                  href="/login"
                   className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white border-2 rounded-lg focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
                 >
                   Get started
@@ -31,13 +33,13 @@ export default function LandingMain(){
                   >
                     <path
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M1 5h12m0 0L9 1m4 4L9 9"
                     />
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

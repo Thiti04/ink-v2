@@ -222,7 +222,7 @@ export default function FilmWidthCal() {
                       <div
                         className="h-full pt-2 rounded-md border-0 bg-transparent py-0 pl-2 pr-7 text-gray-500 sm:text-sm"
                       >
-                        <p>m²</p>
+                        <p>kg</p>
                       </div>
                     </div>
                   </div>

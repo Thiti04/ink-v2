@@ -6,9 +6,8 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
 const navigation = [
-  { name: "Calculater", href: "/calculater" },
-  { name: "Product", href: "#" },
-  { name: "Product", href: "#" },
+  { name: "คำนวณสี", href: "/calculater" },
+  { name: "สูตรสี", href: "/color" }
 ];
 
 export default function Nav() {
